@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.view-phone { display: none;}
+.view-web { display: block;}
+
+.head-info {
+    height: 150px;
+    background-image: linear-gradient(to right, #f1c642, #d70f19);
+    position: fixed;
+    z-index: 2;
+}
+
+.head-logo img {
+height: 100%;
+max-height: 125px;
+padding-top: 30px;
+}
+
+.head-nav ul { font-size: 0;}
+.head-nav a { text-decoration: none;}
+.head-nav li { color:black; width: 25%; font-size: 20px; height: 150px; display: inline-block; padding-top: 50px; text-align: center;}
+
+.head-nav li:hover {color: darkred; background: rgba(0, 0, 0, 0.75); font-weight: 800;}
+
+.section-info {
+    background-image: url(../images/background.jpg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    min-height: 750px;
+    background-size: 100%;
+}
+
+.section-info aside {
+    padding-top: 200px;
+}
+
+.section-text {
+    min-height: 400px;
+    padding: 20px;
+}
+
+.section-text h2 {font-size: 20px;}
+.section-text p {font-size: 18px;}
+.section-text img {
+    width: 100%;
+    margin:20px;
+    border-radius: 25%;
+}
+
+.form-info {
+    padding: 40px;
+    background-image: linear-gradient(to right, #f1c642, #d70f19);
+    border-radius: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+.footer-info {
+    background-color: black;
+    color: white;
+}
+
+.footer-info ul { font-size: 0;}
+.footer-info a { text-decoration: none;}
+.footer-info li {  width: 15%; font-size: 40px; height: 150px; display: inline-block; padding-top: 50px; text-align: center;}
+.footer-info li:hover {color: darkred; background: rgba(0, 0, 0, 0.75); font-weight: 800;}
+
+.footer-left {
+    text-align: right;
+    padding-top: 40px;
+}
+
+@media (max-width: 991px) {
+    .view-phone { display: block;}
+    .view-web { display: none;}
+
+    .footer-info li { width: 20%;}
+
+}
